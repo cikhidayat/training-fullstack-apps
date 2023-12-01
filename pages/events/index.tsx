@@ -7,7 +7,7 @@ function AllEventsPage() {
   const events = allEvents()
   const router = useRouter()
 
-  function findEventHandler(year: number, month: number) {
+  function findEventHandler(year: number, month: string) {
     const eventSearchPath = `events/${year}/${month}`
     router.push(eventSearchPath) 
   }

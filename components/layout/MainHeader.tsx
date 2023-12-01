@@ -1,4 +1,5 @@
 import Link from "next/link"
+import LinkButton from "../ui/LinkButton"
 import classes from "./main-header.module.css"
 
 function MainHeader() {
@@ -9,7 +10,7 @@ function MainHeader() {
             </div>
             <nav className={classes.navigation}>
                 <ul>
-                    <li className={classes.headerList}><Link href="/events">Browse All Events</Link></li>
+                    <li className={classes.headerList}><LinkButton link="/events" linkDesc="Browse All Events"/></li>
                 </ul>
             </nav>
         </header>

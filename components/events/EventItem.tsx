@@ -1,3 +1,4 @@
+import LinkButton from "../ui/LinkButton";
 import classes from "./event-item.module.css"
 
 function EventItem(props: {
@@ -5,13 +6,13 @@ function EventItem(props: {
     image:string;
     title:string;
     date:string;
-    location:string;
+    location:string
 }) {
     const { id, image, title, date, location } = props
 
     return (
         <li key={id} className={classes.item}>
-            <img src={"/" + image} alt=""/>
+            <img src={"../" + image} alt=""/>
             <div>
                 <div className={classes.content}>
                     <h2>{title}</h2>
@@ -21,6 +22,9 @@ function EventItem(props: {
                 </div>
                 <div className={classes.content}>
                     <address className={classes.address}>{location}</address>
+                </div>
+                <div className={classes.content}>
+                    <LinkButton link={`../details/${id}`} linkDesc="Explore Event"/>
                 </div>
             </div>
         </li>

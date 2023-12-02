@@ -14,12 +14,25 @@ export function allEvents(): Event[] {
     return data;
 }
 
-export function filterEvent(year: number, month: number) {
+export function filterEvent(year: number, month: string) {
     return data.filter((event) => {
-        const eventDate = event.date.split("-"); // 2023-12-5 => [2023, 12, 5]
-        return +eventDate[0] === year && +eventDate[1] === month
+        const eventDate = event.date.split(" "); // 2023-12-5 => [2023, 12, 5]
+        return +eventDate[2] === year && eventDate[0] === month
     })
 }
+
+// export function filterDetail(idDetail: string) {
+//     return data.filter((event) => {
+//         return idDetail === event.id
+//     })
+// }
+
+export function filterDetail(idDetails: string[]) {
+    return data.filter((event) => {
+      return idDetails.includes(event.id);
+    });
+  }
+  
 
 export function featuredEvents(): Event[] {
     return data.filter((event) => event.isFeatured)

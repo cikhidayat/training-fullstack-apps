@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { filterEvent } from "@/providers/EventRepository";
 import EventList from "@/components/events/EventList";
+import ResultsTitle from "@/components/events/ResultsTitle";
 
 function FilteredEventsPage() {
     const router = useRouter()
@@ -12,15 +13,12 @@ function FilteredEventsPage() {
     }
 
     const filteredYear = +filteredData[0]
-    const filteredMonth = +filteredData[1]
+    const filteredMonth = filteredData[1]
 
     if (
         isNaN(filteredYear) ||
-        isNaN(filteredMonth) ||
         filteredYear > 2024 ||
-        filteredYear < 2023 ||
-        filteredMonth > 12 ||
-        filteredMonth < 1
+        filteredYear < 2023
     ) {
         return <p className="center">Invalid Filter</p>        
     }
@@ -39,6 +37,7 @@ function FilteredEventsPage() {
 
     return (
         <>
+            <ResultsTitle yearQuery={filteredYear} monthQuery={filteredMonth}/>
             <EventList items={filteredEvents}/>
         </>
     )

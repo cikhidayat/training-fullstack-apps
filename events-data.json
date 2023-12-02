@@ -4,7 +4,7 @@
     "title": "Programming for everyone",
     "description": "Everyone can learn to code! Yes, everyone! In this live event, we are going to go through all the key basics and get you started with programming as well.",
     "location": "Somestreet 25, 12345 San Somewhereo",
-    "date": "2023-11-15",
+    "date": "November 15, 2023",
     "image": "images/image1.jpg",
     "isFeatured": true
   },
@@ -13,7 +13,7 @@
     "title": "BJJ Workshop",
     "description": "Come and train with us to become a true Warrior.",
     "location": "Warrior MMA Gym, 12750 South Jakarta",
-    "date": "2023-11-15",
+    "date": "November 15, 2023",
     "image": "images/image2.jpg",
     "isFeatured": true
   },
@@ -22,7 +22,7 @@
     "title": "Networking for introverts",
     "description": "We know: Networking is no fun if you are an introvert person. That's why we came up with this event - it'll be so much easier. Promised!",
     "location": "New Wall Street 5, 98765 New Work",
-    "date": "2023-12-01",
+    "date": "December 1, 2023",
     "image": "images/image3.jpg",
     "isFeatured": false
   },
@@ -31,7 +31,7 @@
     "title": "Networking for Startup Founders",
     "description": "You probably need no help with networking in general. But focusing your energy correctly - that is something where most people can improve.",
     "location": "My Street 12, 10115 Broke City",
-    "date": "2023-12-10",
+    "date": "December 10, 2023",
     "image": "images/image4.jpg",
     "isFeatured": false
   },
@@ -40,7 +40,7 @@
     "title": "YOKKAO Seminar Tour with Saenchai",
     "description": "Since 2017, YOKKAO Seminar has become synonymous with the living legend, Saenchai who has led every event as the sole celebrity fighter. But things are about to get a shake-up as YOKKAO Seminar introduces a new concept. YOKKAO young talent, Manachai will join his mentor for a YOKKAO Seminar beginning first in Stuttgart, Germany on 31st January 2024.",
     "location": "Pitt's Muaythai Gym, 70190 Stuttgart",
-    "date": "2024-01-31",
+    "date": "January 31, 2024",
     "image": "images/image5.jpg",
     "isFeatured": true
   }

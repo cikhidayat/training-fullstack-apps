@@ -12,7 +12,7 @@ function EventItem(props: {
 
     return (
         <li key={id} className={classes.item}>
-            <img src={".../" + image} alt=""/>
+            <img src={"@/" + image} alt=""/>
             <div>
                 <div className={classes.content}>
                     <h2>{title}</h2>

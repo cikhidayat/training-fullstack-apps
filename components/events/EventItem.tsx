@@ -12,7 +12,7 @@ function EventItem(props: {
 
     return (
         <li key={id} className={classes.item}>
-            <img src={"./" + image} alt=""/>
+            <img src={"/" + image} alt=""/>
             <div>
                 <div className={classes.content}>
                     <h2>{title}</h2>
@@ -24,7 +24,7 @@ function EventItem(props: {
                     <address className={classes.address}>{location}</address>
                 </div>
                 <div className={classes.content}>
-                    <LinkButton link={`../details/${id}`} linkDesc="Explore Event"/>
+                    <LinkButton link={"./events/" + id} linkDesc="Explore Event"/>
                 </div>
             </div>
         </li>

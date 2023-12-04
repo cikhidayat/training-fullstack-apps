@@ -27,9 +27,9 @@ export function filterEvent(year: number, month: string) {
 //     })
 // }
 
-export function filterDetail(idDetails: string[]) {
+export function filterDetail(idDetails: string) {
     return data.filter((event) => {
-      return idDetails.includes(event.id);
+      return idDetails === event.id;
     });
   }
   

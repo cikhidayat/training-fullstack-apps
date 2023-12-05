@@ -8,8 +8,6 @@ function EventDetailPage() {
 
   const filteredDetail = filterDetail(filteredData)
 
-  console.log(filteredDetail);
-
   return <EventContent items={filteredDetail} />;
 }
 

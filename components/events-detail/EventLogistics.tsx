@@ -1,5 +1,6 @@
 import classes from "./event-logistics.module.css"
 import items from "./logistics-item.module.css"
+import content from "./event-content.module.css"
 
 function EventLogistics(props: {
     image: string,
@@ -11,7 +12,7 @@ function EventLogistics(props: {
 
     return (
         <>
-            <div>
+            <div className={content.content}>
                 <div className={classes.space}>
                     <div className={classes.logistics}>
                         <time className={items.item}>{date}</time>
